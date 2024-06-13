@@ -37,9 +37,27 @@ body {
     transform: translateY(-3px);
 }
 
-.hand{
+.second-hand{
+  width: 50%;
+  height: 4px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+.minute-hand{
   width: 50%;
   height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+.hour-hand{
+  width: 50%;
+  height: 10px;
   background: white;
   position: absolute;
   top: 50%;
