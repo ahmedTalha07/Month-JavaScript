@@ -19,7 +19,19 @@
     </div>
 
 
-<script></script>
+<script>
+    
+    
+    function setDate() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const minutes = now.getMinutes();
+        const secondsDegrees = ((seconds /60) * 360) + 90;
+        const secondHand = document.querySelector('.second-hand');
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`; 
+    }
+    setInterval(setDate, 1000)
+</script>
 
 </body>
 
