@@ -1,7 +1,7 @@
 :root{
-    --base : crimson ;
-    --spacing : 20px;
-    --blur : 12px;
+    --base : #000000 ;
+    --spacing : 10px;
+    --blur : 10px;
 }
 
 img{
