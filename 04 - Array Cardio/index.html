@@ -27,10 +27,10 @@ const inventors = [
 const people = [
     'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Beckett, Samuel', 'Blake, William', 'Beddoes, Mick',
     'Beethoven, Ludwig', 'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter',
-    'Benjamin, Walter', 'Berlin, Irving', 'Benn, Tony', 'Benson, Leana', 'Bent Silas', 'Berle, Milton', 'Barry, Halle', 'Biko, Steve',
-    'Beck, Glenn', 'Bergman, Ingmar', 'Black, Elk', 'Berio, Luciano', 'Berne Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin',
+    'Benjamin, Walter', 'Berlin, Irving', 'Benn, Tony', 'Benson, Leana', 'Bent, Silas', 'Berle, Milton', 'Barry, Halle', 'Biko, Steve',
+    'Beck, Glenn', 'Bergman, Ingmar', 'Black, Elk', 'Berio, Luciano', 'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin',
     'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose', 'Billings, Josh', 'Birell, Augustine',
-    'Azam, Quaid-e', 'Allama, Iqbal', 'Jinnah, Fatima Ali'  
+    'Azam, Quaid-e', 'Iqbal, Allama', 'Jinnah, Fatima' 
 ];
 
 // Array.prototype.filter()
@@ -108,11 +108,22 @@ console.table(chronological);
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+      
+    const alphabetically = people.sort((lastOne, nextOne) =>{
+        
+        const [aLast, aFirst] = lastOne.split(', ');
+        const [bLast, bFirst] = nextOne.split(', ');
+      
+        return aLast < bLast ? -1 : 1;
+        
+    });
+    console.log(alphabetically);
 
 
-    
     // 8. Reduce Exercise
     // Sum up the instances of each of these
+     
+
 
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
@@ -121,3 +132,5 @@ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 
 </body>
 </html>
+
+"Forth Project of daily JS projects"
