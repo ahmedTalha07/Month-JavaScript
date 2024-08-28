@@ -26,21 +26,34 @@ console.log(`WTF ${abc} yaaar`)
 console.log('WTF %s yaaar', 'this do')
 
     // Styled
-   console.log('%c I am some great text', 'font-size:3px;')
+console.log('%c I am some great text', 'font-size:3px;')
     // warning!
-
-    // Error :|
-
+console.warn('Something is going wrong')
+// Error :|
+console.error('Oh no')
     // Info
-
+console.info('Take this fun piece of info')
     // Testing
-
+    const p = document.querySelector('p');
+console.assert(p.classList.contains('ouch'), 'this is wrong')
     // clearing
-
+console.clear();
     // Viewing DOM Elements
-
+console.log(p);
+console.dir(p);
+console.clear();
     // Grouping together
-
+    let someText = 'years old';
+    let furText = 'is';
+    dogs.forEach(dog => {
+        let dogYears = `${dog.age * 7} dog`;
+        console.group(`${dog.name}`);
+        console.log(`This is ${dog.name}`)
+        console.log(`${dog.name} ${furText} ${dog.age} ${someText}`)
+        console.log(`${dog.name} ${furText} ${dogYears} ${someText}`)
+        console.groupEnd(`${dog.name}`);
+    })
+    console
     // counting
 
     // timing
